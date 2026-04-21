@@ -14,8 +14,8 @@ let coulImg = document.getElementById("coul");
 let spImg = document.getElementById("sp");
 
 window.onload = function() {
-  w=spImg.width/4;
-  h=spImg.height/4;
+  h=window.innerHeight*0.5;
+  w=spImg.width/spImg.height*h;
 
   canvas.width=w;
   canvas.height=h;

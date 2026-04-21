@@ -26,8 +26,8 @@ On the browser, you switch slides with PageUp and PageDown keyboard key.
 
 Items can be hidden, and revealed by using the left and right arrow keys (that changes slides if there is nothing more to reveal/hide). For this, put the class `reveal` in the tag of the concerned element(s).
 
-Folder `example/` contains an example, just look. It contains in particular a simple example of css style file called `slide.css`. The design of this style file can be improved (right now it uses a mix of absolute and relative size units).
+Folder `example/` contains an example, just look. It contains in particular a simple example of css style file called `slide.css`not pretending to be perfect. 
 
-A working example (with a former version: arrows don't transition between slides, only page up/down) can be found online at: https://www.math.univ-toulouse.fr/~cheritat/Exposes/IHP-2026-3/ if that link is still active. 
+A real-life example (with a former version of the js code: arrows don't transition between slides, only page up/down) can be found online at: https://www.math.univ-toulouse.fr/~cheritat/Exposes/IHP-2026-3/ if that link is still active. 
 
 [^1] This is not optimal in terms of pre-loading things but for normal simple presentations, this should work.

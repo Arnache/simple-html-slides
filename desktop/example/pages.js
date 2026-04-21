@@ -4,8 +4,8 @@ let pages = [
   "page-1.html",
   "page-2.html",
   
-  "hex-1.html",
-  "hex-2.html",
+  "hex.html",
+  "math.html",
 
   "end.html",
 ];
