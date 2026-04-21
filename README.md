@@ -4,7 +4,7 @@ A minimal slides system for HTML presentations.
 
 Right now it is only compatible with desktop and laptop, *not* touch devices (mobile phones, tablets, ...).
 
-The code is in `files/` and consists in the companion file `pages.js`to be put in the folder containing the HTML presentation files. Each slide is a separate html file [1] that must each load (near the end) the pages.js as a script.
+The code is in `files/` and consists in the companion file `pages.js`to be put in the folder containing the HTML presentation files. Each slide is a separate html file[^1] that must each load (near the end) the pages.js as a script.
 
 The file pages.js starts with an `Array` containing the (ordered) list of your slides: just modify it. It looks like this:
 
@@ -30,4 +30,4 @@ Folder `example/` contains an example, just look. It contains in particular a si
 
 A working example (with a former version: arrows don't transition between slides, only page up/down) can be found online at: https://www.math.univ-toulouse.fr/~cheritat/Exposes/IHP-2026-3/ if that link is still active. 
 
-[1] This is not optimal in terms of pre-loading things but for normal simple presentations, this should work.
+[^1] This is not optimal in terms of pre-loading things but for normal simple presentations, this should work.
