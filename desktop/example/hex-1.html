@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="slide.css" rel="stylesheet" />
+    <style>
+.fl { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fl > div {
+  width: 50%;
+}
+
+.no {
+  display: none;
+}
+
+.wrap {
+  display: inline-flex;
+  align-items: center;
+}
+    </style>
+  </head>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <body>
+    <div class="main">
+      <div class="box" style="text-align: center;">
+        
+        <h1>An applet</h1>
+        
+        <div class="fl">
+          <div>
+            <div id="sp1">
+              <img src="img/hd.svg" style="height: 200px;">
+            </div>
+            <div id="sp2" style="display: none;">
+              <img src="img/hd-col.svg" style="height: 200px;">
+              <br>
+              <img src="img/hd-col-2.svg" style="height: 200px;">
+            </div>
+          </div>
+          <div>
+            <canvas id="can">
+            </canvas>
+            <img src="img/sp.png" id="sp" style="display: none;">
+            <img src="img/noir.png" id="noir" style="display: none;">
+            <img src="img/coul.png" id="coul" style="display: none;">
+          </div>
+        </div>
+        
+        <input type="range" id="reveal" style="width: 600px;" min=0 max=1000>
+        <div class="wrap">
+          <input id="couleur" type="checkbox" class="bl">
+          <label for="couleur">&nbsp;Colours</label>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script src="hex-1.js"></script>
+  <script src="pages.js"></script>
+</html>
