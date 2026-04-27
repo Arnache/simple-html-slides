@@ -57,7 +57,3 @@ input.bl[type=checkbox] {
 input.bl[type=checkbox]:checked {
   background: #0080FF;
 }
-
-.reveal {
-  visibility: hidden;
-}

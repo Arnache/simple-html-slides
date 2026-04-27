@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background: rgb(70,20,200);
+        margin: 0;
+        padding: 0;
+      }
+
+      div.main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+
+        background-image: url(img/fond.jpg);
+        background-repeat: repeat;
+        background-size: auto 130%;
+      }
+      
+      .title {
+        font-family: sans serif;
+        font-size: 700%;
+        font-weight: bold;
+        color: orange;
+        text-shadow: .1em .1em .2em black;
+      }
+
+      .sub {
+        font-size: 450%;
+      }
+
+      .subsub {
+        font-size: 300%;
+      }
+            
+    </style>
+  </head>
+  <script type="module" src="pages.js"></script>
+  <body>  
+    <div class="main">
+      <div class="title">A presentation</div>
+      <div class="sub title">by someone</div>
+      <div class="subsub title">DD/MM/YYYY</div>
+    </div>
+  </body>
+</html>

@@ -57,11 +57,16 @@ document.addEventListener('keydown',  e => {
 
 /* reveal */
 
-let revList = document.querySelectorAll(".reveal");
-
-// revList.forEach( el => el.style.visibility = "hidden" ); // done by the stylesheet
-
+let revList;
 let index = 0;
+
+function initReveal() {
+  revList = document.querySelectorAll(".reveal");
+}
+
+const style = document.createElement("style");
+document.head.appendChild(style);
+style.sheet.insertRule(".reveal { visibility: hidden; }");
 
 function next() {
   if(index<revList.length) {
@@ -88,4 +93,8 @@ document.addEventListener('keydown',  e => {
     next();
   else if(e.key=="ArrowLeft")
     prev();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  initReveal();
 });
