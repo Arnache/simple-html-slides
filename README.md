@@ -6,7 +6,7 @@ Right now it is only compatible with desktop and laptop, *not* touch devices (mo
 
 ## Slideshow preparation
 
-The code is in `files/` and consists in the companion file `simple-html-slides.js`to be put in the folder containing the HTML presentation files (or in another folder). 
+The code is in `files/module/` and consists in the companion file `simple-html-slides.js`to be put in the folder containing the HTML presentation files (or in another folder). 
 
 You need to create a file, call it as you like (here we choose `pages.js`). Each slide must be a separate html file[^1] that shall each load `pages.js `*at the beginning* of the `<body>` element (or just before it)  with a `<script>`tag as follows:
 
@@ -22,32 +22,30 @@ You need to create a file, call it as you like (here we choose `pages.js`). Each
 The file `pages.js`shall look like this:
 
 ```js
-
 import init from "./simple-html-slides.js";
 
 init([
   "index.html",
-  
+
   "page-1.html",
   "page-2.html",
-  
+
   "hex.html",
   "math.html",
 
   "end.html",
 ]);
-
 ```
 
 It calls `init` whit argument an `Array` containing the (ordered) list of your slides: just modify it.
 
 ## Slideshow presentation
 
-On the browser, you switch slides with PageUp and PageDown keys on the keyboard.
+On the browser, you navigate between slides with PageUp, PageDown, Home and End keys.
 
 ## Items within a slide
 
-Items can be hidden, and revealed by using the left and right arrow keys (that changes slides if there is nothing more to reveal/hide). For this, put the class `reveal` in the tag of the concerned element(s) as in:
+Items can be hidden, and revealed by using Space or the left and ight Arrow keys (that changes slides if there is nothing more to reveal/hide). For this, put the class `reveal` in the tag of the concerned element(s) as in:
 
 ```html
   ...
@@ -61,10 +59,12 @@ Items can be hidden, and revealed by using the left and right arrow keys (that c
 
 ## Examples
 
-Folder `example/` contains an example, just look. It contains in particular a simple example of css style file called `slide.css`not pretending to be perfect. 
+Folder `example/module/` contains an example, just look. It contains in particular a simple example of css style file called `slide.css`not pretending to be perfect. 
 
 A real-life example (with a former version of the js code: arrows don't transition between slides, only page up/down) can be found online at: https://www.math.univ-toulouse.fr/~cheritat/Exposes/IHP-2026-3/ if that link is still active. 
 
-## Footnotes
+## Non-module version
+
+There is a version not using JavaScript modules, in the `files/plain/` and `example/plain/` folders
 
 [^1]: This is not optimal in terms of pre-loading things but for normal simple presentations, this should work.
