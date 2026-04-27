@@ -8,7 +8,7 @@ Right now it is only compatible with desktop and laptop, *not* touch devices (mo
 
 The code is in `files/module/` and consists in the companion file `simple-html-slides.js`to be put in the folder containing the HTML presentation files (or in another folder). 
 
-You need to create a file, call it as you like (here we choose `pages.js`). Each slide must be a separate html file[^1] that shall each load `pages.js `*at the beginning* of the `<body>` element (or just before it)  with a `<script>`tag as follows:
+You need to create a short script file, call it as you like (here we choose `pages.js`). Each slide must be a separate html file[^1] that shall each load the script `pages.js `*at the beginning* of the `<body>` element (or just before it)  with a `<script>`tag as follows:
 
 ```html
     ...
